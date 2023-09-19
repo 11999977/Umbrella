@@ -1,0 +1,366 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  font-family: Inter;
+  overflow-x: hidden;
+}
+
+header{
+  height: 100px;
+  background-color: #1A0840;
+}
+
+/* Mise en forme des boutons */
+
+.bouton{
+  background-color: #0B8C1D;
+  height: 80px;
+  width: 230px;
+  margin-left: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton:hover{
+  background-color: white;
+}
+
+.bouton p:hover{ 
+  color: #0B8C1D;
+}
+
+
+header div p{
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+/* Navbar */
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:650px;
+  width: 582px;
+  
+}
+
+nav figure img[src="/Images/Group 93.jpg"]{
+  margin-left: 88px;
+  margin-top: 50px;
+}
+
+
+/* Menu de navigation */
+
+nav .search{
+  position: relative;
+  left: 240px;
+
+}
+
+.search{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  width: 582px;
+  
+}
+
+nav div ul{
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  
+}
+
+nav div ul li:first-of-type a{
+  text-decoration: none;
+  color: #1A0840;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav div ul li:last-of-type a{
+  color: #0B8C1D;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+
+/* Section Actualités*/
+/* Mise en forme des titres */
+body .titre{
+  display: flex;
+  gap: 10px;
+  padding: 90px;
+}
+
+body .titre div{
+  height: 50px;
+  width: 20px;
+  background-color: #1A0840;
+}
+
+body .titre h1{
+  color:#1A0840;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Mise en forme du carroussel vidéos */
+
+.videos{
+  height: 516px;
+  width: 1318px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin: 83px;
+  margin-top: 83px;
+}
+
+.iframes{
+  height: 421px;
+  width: 516px;
+  position: relative;
+  overflow: hidden;
+}
+
+.iframes{
+  background-color:#1A0840;
+  
+}
+
+.videos{
+  animation: slide 10s infinite;
+  transform:  translateX(-486px) opacity(80%);
+}
+
+.iframes:hover{
+  opacity: 80%;
+  
+}
+
+.iframes video{
+  height: 384px;
+  width: 482px;
+  position: absolute;
+  top: 17px;
+}
+
+/* section mini_gallerie */
+/* Mise en forme de la mini_gallerie */
+
+.mini_gallerie{
+  display: flex;
+  gap: 41px;
+  justify-content: center;
+  align-items: center;
+  width: 1333px;
+  height: 824px;
+  margin-left:90px;
+  margin-right: 90px;
+  margin-top: 83px;
+}
+
+
+/* mise en forme de la première aside */
+
+.first,.second{
+  width: 646px;
+  height: 824px;
+  
+
+}
+
+.first{
+  display: grid;
+  grid-template-columns: 640px;
+  grid-template-rows: repeat(4, 140px);
+  gap: 83px;
+}
+
+.first div{
+  background-color:#1A0840;
+  position: relative;
+  border-radius: 0 13px 13px 0;
+}
+
+.first div img{
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.first div i{
+  height: 140px;
+  width: 74px;
+  position: absolute;
+  right: 0;
+  background-color:#0B8C1D;
+  border-radius: 0 10px 10px 0;
+}
+
+.first div i img{
+  position: absolute;
+  top: 20px;
+}
+
+/* Mise en forme de la seconde aside */
+
+.second h1{
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.second{
+  background-color:#1b1429;
+  border-radius: 8px 8px;
+
+}
+
+.second div{
+  width: 646px;
+  height: 85px;
+  background-color:#1A0840;
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+}
+
+.aside{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  
+
+}
+
+.aside div{
+  background-color: white;
+  height: 130px;
+  width: 640px;
+  border: 1px solid #1A0840;
+  overflow: hidden;
+}
+
+/* Mise en forme de la dernièere section: mega_gallerie*/
+
+.mega_gallerie{
+  width: 643px;
+  height: 1088px;
+  display: grid;
+  grid-template-columns: repeat(2, 305px);
+  grid-template-rows: repeat(2, 500px);
+  gap: 33px;
+  row-gap: 88px;
+  margin-top: 88px;
+  margin-left: 90px;
+  margin-bottom: 570px;
+
+}
+
+.m_gl{
+  padding: 10px;
+  background-color:#1A0840;
+}
+
+/* Pied de page */
+
+footer{
+  height: 427px;
+  background-color: #3c2f40;
+  position: relative;
+}
+
+footer section:first-child{
+  width: 479px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 420px;
+  position: absolute;
+  top: 88px;
+  
+}
+
+footer section:first-child aside{
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+}
+
+footer section aside .bouton{
+  height: 80px;
+  width: 230px;
+}
+
+footer  section aside .bouton p{
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+footer section:first-child :last-of-type div{
+  height: 80px;
+  width: 80px;
+  
+}
+
+/* mise en forme de la barre lateralle du footer */
+
+footer .barre{
+  background-color: white;
+  height: 8px;
+  width: 1333px;
+  position: absolute;
+  top: 213px;
+  margin-left: 90px;
+}
+
+footer h5{
+  color: white;
+  position: absolute;
+  bottom: 116px;
+  left: 518px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* animation des icones du footer */
+
+footer section:first-child :last-of-type div img:hover{
+  transform: rotate(-35deg);
+  background-color: #fff;
+}
+
+/* Animation chevron blanc */
+
+img[src="/Images/Chevron Left.svg"]{
+  transform: translateX(18px);
+  animation: leftRight 2s infinite;
+}
+
+@keyframes leftRight{
+  0%{
+    transform: translateX(-9px);
+  }
+
+  100%{
+    transform: translateX(9px);
+  }
+}

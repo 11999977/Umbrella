@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mise en forme du body */
+
+body{
+    background-color: #0A131A;
+    margin: 57px auto;
+    font-family: inter;
+    height: 100vh;
+}
+
+body h4{
+    color: #324a5f;
+}
+
+body h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+/* Mise en forme de l'entête */
+
+header{
+    width: 343px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px;
+    row-gap: 33px;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+/* Mise en forme des articles dans l'entête */
+header article{
+    width: 153px;
+    height: 55px;
+    background-color: #32415F;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+header article a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header article:first-of-type a{
+    color: orange;
+}
+
+/* Mise en forme de la première section du body */
+
+body:nth-child(2){
+    width: 343px;
+    height: 130px;
+}
+
+body:nth-child(2) h1{
+    margin-bottom: 15px;
+    font-size: 32px;
+    text-align: center;
+}
+
+body:nth-child(2) h4{
+    margin-bottom: 44px;
+    font-size: 20px;
+    width: 262px;
+    height: 25px;
+    margin: 0 auto;
+    position: relative;
+    left: 15px;
+
+}
+
+
+/* Mise en forme de l'image */
+.image{
+    width: 323px;
+    height: 165px;
+    margin: 52px auto;
+    margin-bottom: 9px;
+}
+
+/* Mise en forme des textes */
+.container{
+    margin: 53px auto;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.container p{
+    color: #C6C9CB;
+    
+}
+
+
+.texte1{
+    height: 464px;
+    min-width: 334px;
+    margin-bottom: 43px;
+}
+
+.texte2{
+    height: 431px;
+    min-width: 322px;
+    margin-bottom: 63px;
+}
+.texte3{
+    height: 438px;
+    min-width: 322px;
+    margin-bottom: 47px;
+}
+
+.texte4{
+    height: 437px;
+    min-width: 322px;
+    
+}
+
+
+.texte1 p span{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+/* Responsive */
+
+@media only screen and (min-width=744px) and (max-width=1380px){
+
+    header{
+        display: flex;
+        width: auto;
+        gap: 86px;
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+
+    header article{
+        width: 153px;
+        height: 55px;
+        background-color: red;
+    
+    }
+
+    
+}
