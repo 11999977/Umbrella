@@ -52,7 +52,7 @@ nav{
   
 }
 
-nav figure img[src="/Images/Group 93.jpg"]{
+nav figure img[src="../Images/Group 93.jpg"]{
   margin-left: 88px;
   margin-top: 50px;
 }
